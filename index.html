@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFRO - Portal</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="logo">
+        <img src="./public/img/logotipo-IFRO-portal-principal.png" alt="IFRO" />
+        <div>
+          <strong>INSTITUTO FEDERAL</strong><br />
+          <span>Rondônia</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Processos seletivos</a>
+        <a href="#">Cursos</a>
+        <a href="#">Campi</a>
+        <a href="#">Institucional</a>
+        <a href="#">Acesso à Informação</a>
+        <a href="#">Eventos</a>
+        <a href="#">Serviços</a>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Busca" />
+      </div>
+    </header>
+
+    <main>
+      <section class="banners">
+        <div class="card" style="background-image: url('./public/img/Programa_PartiuIF_Destaque.2e16d0ba.fill-1080x1920.png')"></div>
+        <div class="card" style="background-image: url('/img/alimentacao.png')"></div>
+        <div class="card" style="background-image: url('/img/jogos.png')"></div>
+        <div class="card" style="background-image: url('/img/partiu.png')"></div>
+      </section>
+
+      <section class="noticias">
+        <h2>Notícias</h2>
+        <div class="noticia-cards">
+          
+          <div class="noticia-card">
+            <img src="./public/img/Vilhena-Meio_Ambiente_18.jpg" alt="Webinário Neoenergia">
+            <div class="noticia-content">
+              <div class="noticia-categoria">Parcerias</div>
+              <div class="noticia-titulo">IFRO e Neoenergia Cosern promovem webinar sobre chamada de projetos</div>
+              <div class="noticia-descricao">Evento apresentou oportunidades de parceria e lançou edital para submissão de propostas inovadoras</div>
+              <div class="noticia-data">Há 4 horas, 8 minutos</div>
+            </div>
+          </div>
+
+          <div class="noticia-card">
+            <img src="./public/img/Alunos_no_laboratório_de_matemática_1.jpg" alt="Seleção de Projetos">
+            <div class="noticia-content">
+              <div class="noticia-categoria">Oportunidade</div>
+              <div class="noticia-titulo">IFRO lança edital para seleção de projetos de PDI em parceria com a Neoenergia Cosern</div>
+              <div class="noticia-descricao">Submissão de propostas de Pesquisa, Desenvolvimento e Inovação (PDI) está aberta até o dia 22 de agosto</div>
+              <div class="noticia-data">Há 4 horas, 32 minutos</div>
+            </div>
+          </div>
+
+          <div class="noticia-card">
+            <img src="./public/img/Kids-Vilhena_3.jpg" alt="Obras Umarizal">
+            <div class="noticia-content">
+              <div class="noticia-categoria">Implantação</div>
+              <div class="noticia-titulo">IFRO oficializa início das obras de ampliação do Campus </div>
+              <div class="noticia-descricao">Solenidade reuniu autoridades e comunidade local para assinatura da Ordem de Serviço</div>
+              <div class="noticia-data">Há 5 horas, 1 minuto</div>
+            </div>
+          </div>
+
+          <div class="noticia-card">
+            <img src="./public/img/Vilhena-Obmep_1.jpg" alt="Mestrado servidores">
+            <div class="noticia-content">
+              <div class="noticia-categoria">Capacitação</div>
+              <div class="noticia-titulo">Aberto período de inscrição para seleção de mestrado em processos de aprendizagem</div>
+              <div class="noticia-descricao">Processo é fruto de parceria com a UFRN</div>
+              <div class="noticia-data">Há 6 horas, 49 minutos</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="cursos">
+        <h2>Conheça nossos cursos</h2>
+        <p>
+          Você sabia que o IFRO tem <strong>223</strong> cursos gratuitos?
+        </p>
+        <div class="cursos-cards">
+          <div class="curso">Analise e Desenvolvimento de Sistemas</div>
+          <div class="curso">Matematica</div>
+          <div class="curso">Arquitetura e Urbanismo</div>
+        </div>
+      </section>
+
+      <section class="processos">
+        <h2>Processos seletivos</h2>
+        <p>Mais de seis mil vagas...</p>
+        <div class="filtro">
+          <select>
+            <option>Estude no IFRO</option>
+          </select>
+          <button>Buscar</button>
+        </div>
+        <div class="processo">Curso de eletricista predial</div>
+      </section>
+
+      <section class="numeros">
+        <h2>IFRO em números</h2>
+        <div class="numeros-grid">
+          <div>22 Campi</div>
+          <div>223 Cursos</div>
+          <div>35.275 Estudantes</div>
+          <div>2.978 Servidores</div>
+          <div>9 Incubadoras</div>
+          <div>6 Núcleos de Tecnologia</div>
+          <div>423 Projetos de Extensão</div>
+          <div>722 Projetos de Pesquisa</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <img src="./public/img/logotipo-IFRO-portal-principal.png" alt="Logo IFRO" />
+        <p>
+          Instituto Federal de Educação, Ciência e Tecnologia do Estado de Rondônia<br />
+          BR-174, Km 3 S/n - Zona Norte, Vilhena - RO, 76980-000
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
