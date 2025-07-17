@@ -1,3 +1,3 @@
 import "./style.css";
 
-console.log("Portal IFRN carregado.");
+console.log("Portal IFRO carregado.");

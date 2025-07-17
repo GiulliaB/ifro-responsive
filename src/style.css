@@ -104,6 +104,7 @@ a {
 
 .noticias {
   padding: 2rem 1rem;
+  margin: 0 5rem;
 }
 
 .noticias h2 {
@@ -161,9 +162,9 @@ a {
 }
 
 .cursos {
-  background-color: #388e3c;
+  background-color: #0a361c;
   color: white;
-  padding: 2rem 1rem;
+  padding: 7rem 2rem;
   text-align: center;
 }
 
@@ -179,16 +180,17 @@ a {
 }
 
 .curso {
-  background: white;
-  color: #333;
+  background: #2e7d32;
+  color: #ffffff;
   padding: 1.5rem;
   border-radius: 10px;
-  width: 220px;
+  width: 15rem;
 }
 
 .processos {
   padding: 2rem 1rem;
   text-align: center;
+  margin: 0 5rem;
 }
 
 .filtro {
@@ -206,30 +208,129 @@ a {
   border-radius: 6px;
 }
 
-.processo {
-  background-color: #e0f2f1;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-left: 4px solid #00796b;
-}
-
-.numeros {
-  background: #f1f8e9;
-  padding: 2rem 1rem;
-}
-
-.numeros-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+.legenda {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+
+.legenda i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-nao-iniciada { background-color: #b58900; }
+.status-hoje { background-color: #dc322f; }
+.status-andamento { background-color: #008000; }
+.status-finalizada { background-color: #aaa; }
+
+.processo-card {
+  background: #ffffff;
+  border-left: 4px solid #2e7d32;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 90rem;
+  text-align: left;
+}
+
+.processo-card .cabecalho {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.processo-card h3 {
+  font-size: 1.25rem;
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+.processo-card .etapas {
+  border-left: 2px solid #ddd;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.etapa {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.etapa .data {
+  font-weight: bold;
+  color: #555;
+  width: 60px;
+}
+
+.processo-card .edital {
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+.campi{
+  background-color: white;
+}
+.campi-section {
+  margin: 0 5rem;
+  color: #051c0f;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.numeros-grid > div {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  font-weight: 600;
+.campi-texto {
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.campi-texto h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.campi-texto p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.campi-imagem img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .campi-section {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .campi-texto {
+    flex: 1;
+    margin-right: 2rem;
+  }
+
+  .campi-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer {
@@ -263,6 +364,20 @@ a {
   .cursos-cards {
     flex-direction: row;
     overflow-x: auto;
+  }
+  .noticias{
+    margin: 0;
+  }
+
+  .campi-section{
+    margin: 0;
+  }
+  .noticias{
+    margin: 0;
+  }
+
+  .processos{
+    margin: 0;
   }
 }
 
