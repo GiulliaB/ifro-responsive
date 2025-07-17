@@ -382,6 +382,9 @@ a {
 }
 
 @media (max-width: 600px) {
+  .search{
+    display: none;
+  }
   .top-bar {
     padding: 1rem;
     flex-direction: column;
@@ -411,3 +414,4 @@ a {
     width: 100%;
   }
 }
+
