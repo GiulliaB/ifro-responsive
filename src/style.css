@@ -63,6 +63,7 @@ a {
   width: 100%;
   max-width: 200px;
 }
+
 .banners {
   display: flex;
   overflow-x: auto;
@@ -93,14 +94,13 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-
-.orange { background: #f26a1b; }
-.green { background: #4caf50; }
+.orange     { background: #f26a1b; }
+.green      { background: #4caf50; }
 .green-dark { background: #2e7d32; }
-.yellow { background: #fdd835; color: #333; }
-.purple { background: #9c27b0; }
-.blue { background: #2196f3; }
-.dark-blue { background: #3f51b5; }
+.yellow     { background: #fdd835; color: #333; }
+.purple     { background: #9c27b0; }
+.blue       { background: #2196f3; }
+.dark-blue  { background: #3f51b5; }
 
 .noticias {
   padding: 2rem 1rem;
@@ -225,9 +225,9 @@ a {
 }
 
 .status-nao-iniciada { background-color: #b58900; }
-.status-hoje { background-color: #dc322f; }
-.status-andamento { background-color: #008000; }
-.status-finalizada { background-color: #aaa; }
+.status-hoje        { background-color: #dc322f; }
+.status-andamento   { background-color: #008000; }
+.status-finalizada  { background-color: #aaa; }
 
 .processo-card {
   background: #ffffff;
@@ -235,7 +235,7 @@ a {
   border-radius: 10px;
   padding: 1.5rem;
   margin: 1rem auto;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   max-width: 90rem;
   text-align: left;
 }
@@ -279,9 +279,11 @@ a {
   font-size: 0.85rem;
   color: #555;
 }
-.campi{
+
+.campi {
   background-color: white;
 }
+
 .campi-section {
   margin: 0 5rem;
   color: #051c0f;
@@ -313,6 +315,18 @@ a {
   height: auto;
 }
 
+.footer {
+  background: #0a361c;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
   .campi-section {
     flex-direction: row;
@@ -331,18 +345,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-}
-
-.footer {
-  background: #0a361c;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.footer img {
-  height: 50px;
-  margin-bottom: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -365,26 +367,23 @@ a {
     flex-direction: row;
     overflow-x: auto;
   }
-  .noticias{
-    margin: 0;
+
+  .banners {
+    justify-content: flex-start;
   }
 
-  .campi-section{
-    margin: 0;
-  }
-  .noticias{
-    margin: 0;
-  }
-
-  .processos{
+  .noticias,
+  .campi-section,
+  .processos {
     margin: 0;
   }
 }
 
 @media (max-width: 600px) {
-  .search{
+  .search {
     display: none;
   }
+
   .top-bar {
     padding: 1rem;
     flex-direction: column;
@@ -414,4 +413,3 @@ a {
     width: 100%;
   }
 }
-
