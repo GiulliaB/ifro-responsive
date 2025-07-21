@@ -230,10 +230,10 @@ a {
   display: inline-block;
 }
 
-.status-nao-iniciada { background-color: #b58900; }
-.status-hoje        { background-color: #dc322f; }
-.status-andamento   { background-color: #008000; }
-.status-finalizada  { background-color: #aaa; }
+.status-nao-iniciada { background-color: #b58900; color: white;}
+.status-hoje        { background-color: #dc322f; color: white;}
+.status-andamento   { background-color: #008000; color: white;}
+.status-finalizada  { background-color: #aaa; color: white;}
 
 .processo-card {
   background: #ffffff;
